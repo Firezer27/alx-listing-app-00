@@ -9,13 +9,13 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-export interface AddressProps {
+export interface Address {
   state: string;
   city: string;
   country: string;
 }
 
-export interface OffersProps {
+export interface Offers {
   bed: string;
   shower: string;
   occupants: string;
