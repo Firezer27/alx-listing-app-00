@@ -1,13 +1,4 @@
-export interface CardProps {
-  title: string;
-  description: string;
-  image: string;
-}
 
-export interface ButtonProps {
-  label: string;
-  onClick?: () => void;
-}
 
 export interface Address {
   state: string;
@@ -23,11 +14,11 @@ export interface Offers {
 
 export interface PropertyProps {
   name: string;
-  address: AddressProps;
+  address: Address;
   rating: number;
   category: string[];
   price: number;
-  offers: OffersProps;
+  offers: Offers;
   image: string;
   discount: string;
 }
